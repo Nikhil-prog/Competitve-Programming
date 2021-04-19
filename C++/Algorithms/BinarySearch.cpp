@@ -1,6 +1,7 @@
 // function To search a number 'num' in array 'arr' within
 // range of [low, high] index
 // returns -1 in case of not exist
+// Time Complexity - O(log (high-low+1))
 int binarySearch(int *arr, int low, int high, int num)
 {
     while (low <= high)
