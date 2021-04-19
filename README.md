@@ -1,2 +1,2 @@
 # Competitve-Programming
-Data Structure and Alogrithms
+Data Structures and Alogrithms
