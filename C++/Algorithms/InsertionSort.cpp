@@ -1,0 +1,23 @@
+/*Nikhil*/
+
+//Insertion Sort that sort the array within
+//the range of [index "fromIndex" to index "inIndex"]
+//if you want to run it on whole array
+//Simply pass argument OR Replace as follow
+//[fromIndex,toIndex] = [0, ArraySize-1]
+void insertionSort(int *arr, int fromIndex, int toIndex)
+{
+    for (int i = fromIndex + 1; i <= toIndex; i++)
+    {
+        int currValue = arr[i];
+        int j = i - 1;
+
+        while (j >= fromIndex && arr[j] > currValue)
+        {
+            arr[j + 1] = arr[j];
+            j--;
+        }
+        arr[j + 1] = currValue;
+    }
+    return;
+}
