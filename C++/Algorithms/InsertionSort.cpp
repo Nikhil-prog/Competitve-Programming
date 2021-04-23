@@ -4,7 +4,9 @@
 //the range of [index "fromIndex" to index "inIndex"]
 //if you want to run it on whole array
 //Simply pass argument OR Replace as follow
-//[fromIndex,toIndex] = [0, ArraySize-1]
+//[fromIndex,toIndex] -> [0, ArraySize-1]
+//TIME COMPLEXITY - (best,average,worst) -> (n, n^2 , n^2)
+//where n: lenght of part of array to be sorted
 void insertionSort(int *arr, int fromIndex, int toIndex)
 {
     for (int i = fromIndex + 1; i <= toIndex; i++)
