@@ -8,28 +8,18 @@ int mostContiguousFrequentElement(int *arr, int size)
     int maxFreq = -1;
     int mostFreqElement=-1;
     
-    bool arrayStart = true;
     int lastElement = -1;
     int freq = 0;
     for (int i = 0; i < size; i++)
     {
-        if (arrayStart)
+       if (arr[i] == lastElement)
         {
-            lastElement = arr[i];
             freq++;
-            arrayStart = false;
         }
         else
         {
-            if (arr[i] == lastElement)
-            {
-                freq++;
-            }
-            else
-            {
-                lastElement = arr[i];
-                freq = 1;
-            }
+            lastElement = arr[i];
+            freq = 1;
         }
 
         if (freq > maxFreq)
