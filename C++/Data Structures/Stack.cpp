@@ -54,7 +54,7 @@ public:
     int top()
     {
         if (head == NULL)
-            return INT_MAX;
+            return -1;
         return head->data;
     }
 
