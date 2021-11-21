@@ -33,17 +33,13 @@ public:
         return sz == 0;
     }
 
-    int pop()
+    void pop()
     {
-        if (head == NULL)
-            return -1;
-        int top = head->data;
-        //just to delete memory allocated to top elemenet
-        Node *temp = head;
-        head = head->next;
-        delete (temp);
-        sz--;
-        return top;
+        if (sz != 0)
+        {
+            head = head->next;
+            sz--;
+        }
     }
 
     int size()
