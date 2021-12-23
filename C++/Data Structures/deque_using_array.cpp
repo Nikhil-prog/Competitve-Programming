@@ -50,7 +50,7 @@ public:
 
 	void insertLast(int num)
 	{
-		// if dequeue is already full
+		// if dequeue is already full 
 		if (isFull())
 			return;
 		// update the head pointer considering array to be circular
