@@ -4,7 +4,7 @@ using namespace std;
 
 class my_deque
 {
-	// Members of a deque
+	// Members of a dequeue
 	int *deq; // or use vector
 	int head;
 	int tail;
