@@ -23,7 +23,7 @@ int main()
     int arr[] = {2, 9, -1, 5, 10, 1, 0, -7};
     bubbleSort(arr, 8);
 
-    //print sorted array
+    // print sorted array
     for (int i = 0; i < 8; i++)
     {
         cout << arr[i] << " ";

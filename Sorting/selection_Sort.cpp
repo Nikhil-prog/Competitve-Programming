@@ -15,7 +15,7 @@ void selectionSort(int *arr, int size)
             }
         }
 
-        //swap part of selection sort
+        // swap part of selection sort
         int tempVaule = arr[i];
         arr[i] = arr[minIndex];
         arr[minIndex] = tempVaule;
@@ -27,7 +27,7 @@ int main()
     int arr[] = {2, 9, -1, 5, 10, 1, 0, -7};
     selectionSort(arr, 8);
 
-    //print sorted array
+    // print sorted array
     for (int i = 0; i < 8; i++)
     {
         cout << arr[i] << " ";

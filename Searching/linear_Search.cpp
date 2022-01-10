@@ -17,6 +17,7 @@ int linearSearch(int *arr, int size, int num)
 int main()
 {
     int arr[] = {1, 2, 5, 9, 1, 3, 0, -9, -7, -3};
-    cout << linearSearch(arr, 10, -9) << endl;
+    int size = sizeof(arr) / sizeof(arr[0]);
+    cout << linearSearch(arr, size, -9) << endl;
     return 0;
 }

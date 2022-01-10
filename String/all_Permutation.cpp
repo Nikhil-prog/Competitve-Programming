@@ -18,7 +18,7 @@ void permute(string s, int l, int r)
     }
     for (int i = l; i <= r; i++)
     {
-        //permute all possible letters on lth postion
+        // permute all possible letters on lth postion
         swap(s, l, i);
         permute(s, l + 1, r);
         swap(s, l, i);
