@@ -75,5 +75,6 @@ int main()
     g.addEdge(1, 2);
     g.addEdge(2, 3);
     g.addEdge(3, 4);
+    g.bfs(0);
     return 0;
 }
