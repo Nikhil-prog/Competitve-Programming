@@ -25,14 +25,5 @@ int main()
     int n = x.size(), m = y.size();
     memo.resize(n + 1, vector<int>(m + 1, -1));
     cout << "The length of longest common subsequence: " << lcs(x, y) << endl;
-
-    for (int i = 0; i <= n; i++)
-    {
-        for (int j = 0; j <= m; j++)
-        {
-            cout << memo[i][j] << " ";
-        }
-        cout << "\n";
-    }
     return 0;
 }
