@@ -2,11 +2,13 @@
 
 /*
 <Design a stack with operations on middle element>
-Implement a stack which will support following operations in O(1) time complexity? 
-1) push() which adds an element to the top of stack. 
-2) pop() which removes an element from top of stack. 
-3) findMiddle() which will return middle element of the stack. 
-4) deleteMiddle() which will delete the middle element. 
+Implement a stack which will support following operations in O(1) time complexity?
+1) push() which adds an element to the top of stack.
+2) pop() which removes an element from top of stack.
+3) findMiddle() which will return middle element of the stack.
+4) deleteMiddle() which will delete the middle element.
+
+CHECKOUT THE CONTRIBUTION OF MY THIS CODE TO THE GFG ARTICLE AT BELOW LINK
 
 Problem LINK: https://www.geeksforgeeks.org/design-a-stack-with-find-middle-operation/
 */
