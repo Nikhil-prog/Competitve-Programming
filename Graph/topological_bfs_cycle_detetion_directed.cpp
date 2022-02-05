@@ -22,8 +22,9 @@ public:
         graph[u].push_back(v);
     }
 
-    void topological_sort()
+    bool topological_sort()
     {
+        int count = 0;
         vector<int> tmp_inDegree = inDegree;
         queue<int> q;
         for (int i = 0; i < V; i++)
@@ -36,8 +37,7 @@ public:
         {
             int curr = q.front();
             q.pop();
-            cout << curr << " ";
-
+            count++;
             for (int child : graph[curr])
             {
                 tmp_inDegree[child]--;
@@ -45,20 +45,7 @@ public:
                     q.push(child);
             }
         }
-        cout << endl;
-    }
-
-    void print()
-    {
-        for (int i = 0; i < V; i++)
-        {
-            cout << i << " has neighbour as >> ";
-            for (int j = 0; j < graph[i].size(); j++)
-            {
-                cout << j << " ";
-            }
-            cout << "\n";
-        }
+        return count != V;
     }
 };
 
@@ -72,6 +59,13 @@ int main()
     g.addEdge(2, 3);
     g.addEdge(3, 4);
     g.addEdge(3, 2);
-    g.topological_sort();
+    if (g.topological_sort())
+    {
+        cout << "Graph has Cycle" << endl;
+    }
+    else
+    {
+        cout << "Graph Does NOT have a Cycle" << endl;
+    }
     return 0;
 }
